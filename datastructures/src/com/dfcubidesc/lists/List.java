@@ -1,8 +1,8 @@
-package com.dfcubidesc.src.lists;
+package com.dfcubidesc.lists;
 
 public interface List<T> {
 
-  T get();
+  T get(int index);
 
   void add(T item);
 

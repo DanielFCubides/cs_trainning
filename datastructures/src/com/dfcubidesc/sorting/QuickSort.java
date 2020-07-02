@@ -1,4 +1,4 @@
-package com.dfcubidesc.src.sorting;
+package com.dfcubidesc.sorting;
 
 // Java program for implementation of QuickSort
 class QuickSort
@@ -67,7 +67,7 @@ class QuickSort
   // Driver program
   public static void main(String args[])
   {
-    int arr[] = {10, 7, 8, 9, 1, 5};
+    int arr[] = {10, 7, 8, 9, 1, 5,9, 1, 5};
     int n = arr.length;
 
     QuickSort ob = new QuickSort();

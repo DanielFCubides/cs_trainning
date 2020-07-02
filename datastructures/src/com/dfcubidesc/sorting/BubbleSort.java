@@ -1,4 +1,4 @@
-package com.dfcubidesc.src.sorting;
+package com.dfcubidesc.sorting;
 
 
 // Java program for implementation of Bubble Sort

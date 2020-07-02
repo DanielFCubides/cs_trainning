@@ -3,7 +3,7 @@ package com.dfcubidesc.exercise;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import com.dfcubidesc.src.binarytree.BinaryTree;
+import com.dfcubidesc.binarytree.BinaryTree;
 import org.junit.Test;
 
 public class BinaryTreeExercise {

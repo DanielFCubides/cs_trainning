@@ -1,4 +1,4 @@
-package com.dfcubidesc.src.binarytree;
+package com.dfcubidesc.binarytree;
 
 class Node {
   int value;
