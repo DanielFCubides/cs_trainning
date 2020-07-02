@@ -1,5 +1,6 @@
-/datastructures/out/
-/datastructures/.idea/
+/datastructures/out/*
+/out/*
+/datastructures/.idea/*
 .idea/
 /cs_trainning.iml
 /datastructures/datastructures.iml
