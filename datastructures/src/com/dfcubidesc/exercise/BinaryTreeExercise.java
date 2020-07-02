@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import com.dfcubidesc.src.binarytree.BinaryTree;
 import org.junit.Test;
 
-public class binaryTreeExercise {
+public class BinaryTreeExercise {
 
   private BinaryTree createBinaryTree() {
     BinaryTree bt = new BinaryTree();
@@ -25,10 +25,8 @@ public class binaryTreeExercise {
   @Test
   public void givenABinaryTree_WhenAddingElements_ThenTreeContainsThoseElements() {
     BinaryTree bt = createBinaryTree();
-
     assertTrue(bt.containsNode(6));
     assertTrue(bt.containsNode(4));
-
     assertFalse(bt.containsNode(1));
   }
 
