@@ -1,7 +1,12 @@
 package com.dfcubidesc.binarytree;
 
 public class BinaryTree {
-
+/*
+*      ROOT
+*     R       L
+*    R   L   R    L
+*  R  L R L R L  R L
+*  * */
   Node root;
 
   public void add(int value) {
