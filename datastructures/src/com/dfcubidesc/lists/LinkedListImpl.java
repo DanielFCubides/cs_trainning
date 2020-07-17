@@ -4,8 +4,7 @@ public class LinkedListImpl<T> implements List<T> {
 
   Node head; // head of list
 
-  private void insert(T data)
-  {
+  private void insert(T data) {
     // Create a new node with given data
     Node new_node = new Node(data);
     new_node.next = null;
@@ -14,8 +13,7 @@ public class LinkedListImpl<T> implements List<T> {
     // then make the new node as head
     if (this.head == null) {
       this.head = new_node;
-    }
-    else {
+    } else {
       // Else traverse till the last node
       // and insert the new_node there
       Node last = this.head;
@@ -31,8 +29,7 @@ public class LinkedListImpl<T> implements List<T> {
   // **************TRAVERSAL**************
 
   // Method to print the LinkedList.
-  public void printList()
-  {
+  public void printList() {
     Node currNode = this.head;
 
     System.out.print("\nLinkedList: ");
@@ -48,8 +45,7 @@ public class LinkedListImpl<T> implements List<T> {
     System.out.println("\n");
   }
 
-  private T deleteAtPosition(int index)
-  {
+  private T deleteAtPosition(int index) {
     Node currNode = this.head, prev = null;
 
     if (index == 0 && currNode != null) {
@@ -64,8 +60,7 @@ public class LinkedListImpl<T> implements List<T> {
         prev.next = currNode.next;
         System.out.println(index + " position element deleted");
         break;
-      }
-      else {
+      } else {
         prev = currNode;
         currNode = currNode.next;
         counter++;
@@ -98,8 +93,12 @@ public class LinkedListImpl<T> implements List<T> {
   }
 
   class Node {
+
     T data;
     Node next;
-    Node(T d) { data = d; }
+
+    Node(T d) {
+      data = d;
+    }
   }
 }

@@ -1,6 +1,7 @@
 package com.dfcubidesc.binarytree;
 
 class Node {
+
   int value;
   Node left;
   Node right;

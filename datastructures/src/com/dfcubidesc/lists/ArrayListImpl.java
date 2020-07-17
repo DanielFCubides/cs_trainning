@@ -2,9 +2,9 @@ package com.dfcubidesc.lists;
 
 public class ArrayListImpl<T> implements List<T> {
 
-  private T[] myList;
-  private int size = 0;
   private static final int CAPACITY = 10;
+  private final T[] myList;
+  private int size = 0;
 
   public ArrayListImpl() {
     myList = (T[]) new Object[CAPACITY];
@@ -12,10 +12,10 @@ public class ArrayListImpl<T> implements List<T> {
 
   @Override
   public T get(int index) {
-    if (index>= size || index <0) {
-      throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index );
+    if (index >= size || index < 0) {
+      throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
     }
-    return (T) myList[index];
+    return myList[index];
   }
 
   @Override
